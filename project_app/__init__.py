@@ -18,3 +18,4 @@ app.config['MONGODB_SETTINGS'] = {
 
 #cargando la configuracion con MongoEngine
 db = MongoEngine(app)
+
