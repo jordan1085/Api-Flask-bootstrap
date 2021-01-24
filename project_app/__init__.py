@@ -16,6 +16,14 @@ app.config['MONGODB_SETTINGS'] = {
     'db' : 'flaskBootstrap'
 }
 
+#Configuracion modo debug
+app.debug = True
+
 #cargando la configuracion con MongoEngine
 db = MongoEngine(app)
+
+# Controladores
+# Registramos la ruta de la funcion index de nuestro controlador
+from project_app.book.controllers import bookBp
+app.register_blueprint(bookBp) 
 
